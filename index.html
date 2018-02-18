@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="assets\css\reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Allura" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist\css\bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="assets\css\style.css">
+
+    <title>Oakland A's Trivia</title>
+</head>
+<body>
+    <div class="jumbotron">
+        <h1 class="triviaHeader">Athletic's Franchise Trivia Game:<br>How well do you know the A's?</h1>
+        <button class="btn btn-warning">Click Here to Play</button>
+    </div>
+    <div class="row questionDisplay">
+        <div class="col-sm-4 imgPholder" id='imgHere'></div>
+        <div class="col-sm-4 qPholder" id='qsHere'></div>
+        <div class="col-sm-4 btnSelection" id='radioHere'></div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="col-sm-4 yBoxOne" id="btmBoxOne">
+                <div class="tonySays" id="tonyText"></div>
+            </div>
+            <div class="col-sm-4 resultsDisplay" id="winsLosses"></div>
+            <div class="col-sm-4 yBoxTwo" id='btmBoxTwo'></div>       
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets\javascript\app.js"></script>
+</body>
+
+</html>

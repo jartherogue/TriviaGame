@@ -1,0 +1,70 @@
+html, body {
+    background-image: url(https://cdn-s3.si.com/s3fs-public/styles/marquee_large_2x/public/2017/09/13/oakland-as-new-stadium.jpg);
+}
+.jumbotron {
+    background-color: #efb21e;
+    text-align: center; 
+}
+.btn-warning {
+    padding: 25px;
+    width: 25%;
+    background-color: #003831;
+    color: #ffffff;
+}
+.triviaHeader {
+    text-align: center;
+    font-family: 'Allura', cursive;
+    color: #ffffff;
+}
+.questionDisplay {
+    background-color: #003831;
+    width: 100%;
+    border: solid 2px white; 
+}
+.imgPholder {
+    color: #ffffff;
+    text-align: center;
+    font-size: 32px; 
+    padding: 10px; 
+}
+.qPholder {
+    color: #ffffff;
+    text-align: center; 
+    font-size: 32px; 
+    padding:25px;
+}
+.btnSelection {
+    color: #ffffff;
+    font-size: 24px; 
+    text-align: center;
+    padding: 25px; 
+}
+.yBoxOne {
+    width: 33%;
+    background-color: #efb21e;
+    border: solid 2px #ffffff;
+    text-align: center;
+    padding: 50px; 
+}
+.tonySays {
+    text-align: center;
+    color: #ffffff;
+    font-size: 32px;
+}
+.resultsDisplay {
+    width: 33%;
+    color: #ffffff;
+    background-color: #003831;
+    font-size: 32px;
+    border: solid 2px #ffffff;
+    text-align: center;
+    padding: 50px; 
+}
+.yBoxTwo {
+    width: 33%;
+    background-color: #efb21e;
+    border: solid 2px #ffffff;
+    text-align: center;
+    padding: 50px;
+
+}
