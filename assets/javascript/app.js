@@ -1,5 +1,5 @@
 //Setting variables for time, the game questions, right & wrong answers, and our timeout function.
-var time = 20;
+var timeRemaining = 10;
 var questions = {
     q1:'How Many World Series Championships has the Athletics franchise won?',
     //9
@@ -14,14 +14,55 @@ var questions = {
 }
 var rightAnswer = 0;
 var wrongAnswer = 0;
-var intervalID ; 
+var intervalID;
 //Now to create game functions. It makes sense to me to go in order, so I need a function to start the game,
 //a function to cycle through the questions, and to manipulate the HTML when questions are answered.
 //Then I need a function to reset the game.
+//I went through several iterations of trying to create a timer that would reset each question. I tried to define the function globally and then call it in each question function, but I struggled to get it to work.
+// function timer(){
+//     timeRemaining = timeRemaining - 1; 
+//     if(timeRemaining === 0){
+//         alert('Time up, next question!');
+//         qTwo();
+//     }
+// }
+// function qOneCountdown() {
+//     intervalId = setInterval(decrement, 1000);
+//   }
+//   function decrement() {
+//     timeRemaining--;
+//     $('#winsLosses').html(timeRemaining + ' seconds.');
+//     if(timeRemaining === 0) {
+//         stop();
+//         alert('Out of time, next question!')
+//         clearInterval(intervalId);
+//         qTwo();
+//     }
+// }
+// function stop(){
+//     clearInterval(intervalId);
+// }
+
+// function qTwoCountdown() {
+//     stop()
+//     intervalId = setInterval(decrement, 1000);
+//   }
+//   function decrement() {
+//     timeRemaining--;
+//     $('#winsLosses').html(timeRemaining + ' seconds.');
+//     if(timeRemaining === 0) {
+//         stop();
+//         alert('Out of time, next question!')
+//         clearInterval(intervalId);
+//         qThree();
+//     }
+// }
+
 function beginGame(){
     $('.btn-warning').on('click', function() {
-        // for(var key in questions){
-        //         console.log(key);
+                //qOneCountdown();
+                // decrement();
+                console.log(timeRemaining);
                 console.log(questions.q1);
                 $('#qsHere').html(questions.q1);
                 $('#radioHere').html("9  <input type='radio' id='radioOne'><br>");
@@ -59,6 +100,9 @@ function beginGame(){
             console.log(rightAnswer);
         };
         $('#qsHere').on('click', function(){
+            //intervalID = setInterval(decrement, 1000);
+            //decrement();
+            console.log(timeRemaining);
             $('#qsHere').html(questions.q2);
             $('#radioHere').html("Hartford  <input type='radio' id='radioOne'><br>");
             $('#radioHere').append("Boston <input type='radio' id='radioTwo'><br>");
